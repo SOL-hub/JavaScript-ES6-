@@ -1,0 +1,42 @@
+<p id="hello">안녕</p>
+<button id="button">버튼</button>
+
+
+<script>
+    document.getElementById('button').addEventListener('click', function(){
+        //document.getElementById('hello').innerHTML = '바보'
+        작명('바보')
+    })
+
+
+ // 
+  function 작명(파라미터){
+        document.getElementById('hello').innerHTML = 파라미터
+
+    }
+
+
+ //다른 버전
+ document.getElementById('button').addEventListener('click', ()=>{
+
+ })
+
+ //한번에 여러개 저장하려면
+ var 어레이 = ['딸기', '홍삼', 20];
+ var 오브젝트 = {name : '솔', age: 19}
+
+ //딸기만 출력
+ 어레이[0]
+
+ //이름만 출력
+ 오브젝트.name
+
+//반복되는 코드를 줄이고 싶을 때
+ for(var i = 0; i<5; i++){
+     console.log('안녕');
+ }
+
+[1,2,3,4].forEach(function(a){
+    a
+})
+</script>
